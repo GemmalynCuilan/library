@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/', function () {
 Route::get('/users',[UserController::class, 'index']);
 Route::get( '/user/{id}',[UserController::class, 'show']);
 Route::get('/students', [StudentController::class, 'index']);
+Route::get('/books',[BookController::class, 'index']);
